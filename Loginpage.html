@@ -1,0 +1,83 @@
+<!-- algorithm for login page 
+step 1 : define two input fields username password
+step 2:  define submit button
+step 3:  Attach Javascript so that the submit button should become clicable.
+step 4:  after submitting, the values should be displayed on the UI 
+-->
+<html>
+
+<head>
+
+<title>Loginpage.html</title>
+<style>
+    #myid1{
+        text-align:center;
+        color :red;
+        margin-top : 5px;
+    }
+    table{
+        border-spacing:10px;
+    }
+    div{
+        width: 300px;
+        height:300px;
+        background-color: rgb(46, 109, 190);
+        padding: 5px;
+        margin: 10px 100px 10px 500px;
+        border: 6px groove rgb(0, 140, 255);
+        border-radius: 6px;
+        color:salmon;
+    }
+    
+</style>
+</head>
+
+<body>
+    <h1 id="myid1">LOGINPAGE</h1>
+
+    <div>
+
+        <table>
+
+            <form target="_blank" method="post" autocomplete="on">
+                <tr>    
+                    <td>
+                        <label for="username" >USERNAME</label>
+                    </td>
+                    <td>
+                        <input type="text"  name="username"  placeholder="Username" id="username">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="password" >PASSWORD</label>
+                    <td>
+                        <input type="password" name="password" placeholder="Password" id="password">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button type="button" onclick="display()" >LOGIN</button>
+                    </td>
+                </tr>
+            </form>
+        </table>
+    </div>
+
+    <script>
+    
+        function display()
+        {
+            var username = document.getElementById("username").value;
+	        var password = document.getElementById("password").value;
+	        document.write(`<strong>Username: </strong> ${username} <br> <strong>Password: </strong> ${password}`);// to output the values
+	        alert(username+"\n"+password);// to give alert msg with values passed
+            
+
+        }
+        
+    </script>
+    
+</body>
+
+</html>
