@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <title>task6</title>
+    </head>
+    <body>
+        <form>
+            <select id="menuitem" onchange="displaydetails()">
+                <option value="vegburger">vegburger</option>
+                <option value="chickenburger">chickenburger</option>
+                <option value="vegsandwich">vegsandwich</option>
+                <option value="chickensandwich">chickensandwich</option>
+                <option value="drumsticks">drumsticks</option>`
+            </select>
+        </form>
+        <h3 id="menuinfo"></h3>
+
+        <script>
+            displaydetails();
+            function displaydetails()
+            {
+                var menuitem=document.getElementById("menuitem").value;
+                switch(menuitem)
+                {
+                case "vegburger" : document.getElementById("menuinfo").innerHTML="1 piece 300 quantity 1";  break; 
+                case "chickenburger" : document.getElementById("menuinfo").innerHTML="1 piece 400 quantity 1";  break; 
+                case "vegsandwich" : document.getElementById("menuinfo").innerHTML="1 piece 100 quantity 1";  break; 
+                case "chickensandwich" : document.getElementById("menuinfo").innerHTML="1 piece 200 quantity 1";  break; 
+                case "drumsticks" : document.getElementById("menuinfo").innerHTML="6 piece 500 quantity small";  break; 
+
+                }
+            }
+        </script>
+    </body>
+</html>
