@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <title>displaylistofmessages</title>
+    </head>
+    <body>
+        <ul id="messagegroup">
+
+        </ul>
+       
+        <script>
+            var messagelist = [
+                {
+                    sender : "sai",
+                    message : "hiii..",
+                    time : "10:05 am",
+
+                },
+                {
+                    sender : "vamsi",
+                    message : "can we meet today",
+                    time : "11 : 30 am"
+
+                },
+                {
+                    sender : "dhana",
+                    message : "call me",
+                    time : "1 : 30 pm"
+
+                },
+                {
+                    sender : "kumar",
+                    message : "lets party tonight",
+                    time : " 2: 30 pm"
+                },
+                {
+                    sender : "prasad",
+                    message : "how r u??",
+                    time : " 4: 30 pm"
+                }
+
+            ]
+            var ulitems=document.getElementById("messagegroup");
+            var index=0;
+            while(index<messagelist.length)
+            {
+                
+                var current_msg=messagelist[index];
+                ulitems.innerHTML=ulitems.innerHTML+"<li>"+ current_msg.sender+":   "+current_msg.message+"  "+current_msg.time+" "+"</li>"
+               // console.log(current_msg.sender+":   "+current_msg.message+":  "+current_msg.time+":  ");
+                index++;
+            }
+               
+
+
+            
+        </script>
+    </body>
+</html>
