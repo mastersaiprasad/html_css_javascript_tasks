@@ -1,0 +1,88 @@
+<html>
+    <head>
+        <title>
+            flipkartwatches
+        </title>
+    </head>
+    <body>
+        <ul id="watchesid">
+
+        </ul>
+        <script>
+            var watchesarray=[
+            {
+                    image:"https://rukminim1.flixcart.com/image/495/594/k34rki80/watch/p/s/x/2108-gl-bk-fogg-original-imafmbr5hwcbzxwt.jpeg?q=50",
+                    brand :"applewatch",
+                    rating : "5",
+                    price: "25000"
+
+                },
+                {
+                    image:"https://rukminim1.flixcart.com/image/495/594/keq058w0-0/watch/k/s/r/eh-226-bk-eddy-hager-original-imafvca5psgmv6e8.jpeg?q=50",
+                    brand :"rolex",
+                    rating : "5",
+                    price: "5000"
+                },
+                
+                {
+                    image:"https://rukminim1.flixcart.com/image/495/594/kf2v3ww0-0/watch/7/a/j/tw0tg7300-timex-original-imafvmmdnhefpuf2.jpeg?q=50",
+                    brand :"sonata",
+                    rating : "5",
+                    price: "2000"
+
+                },
+                {
+                    image:"https://rukminim1.flixcart.com/image/495/594/kf1fo280/watch/h/s/d/new-generation-digital-new-digital-led-sports-digital-smart-original-imafvh66mxjg2yxb.jpeg?q=50",
+                    brand :"mi-band",
+                    rating : "3",
+                    price: "999"
+
+                },
+                {
+                    image:"https://rukminim1.flixcart.com/image/495/594/k5wse4w0/watch/2/e/s/led-black-m2-digital-watch-for-boys-girls-silago-original-imafzhfzvyzzsg2z.jpeg?q=50",
+                    brand :"TitanQuartz",
+                    rating : "5",
+                    price: "3000"
+
+                },
+                {
+                    image:"https://rukminim1.flixcart.com/image/495/594/kcgk1ow0/watch/d/y/y/analog-digital-skmei-original-imaftkhgexgahgbh.jpeg?q=50",
+                    brand :"Fitbit",
+                    rating : "4",
+                    price: "1999"
+
+                },
+                {
+                    image:"https://rukminim1.flixcart.com/image/495/594/jgy0fbk0/watch/n/t/y/ls2734-limestone-original-imaf52qxygzr6zzf.jpeg?q=50",
+                    brand :"applewatch",
+                    rating : "5",
+                    price: "25000"
+
+                },
+                {
+                    image:"https://rukminim1.flixcart.com/image/495/594/k5o7r0w0/watch/n/e/u/ds-114-unique-arrow-professional-rich-look-tixon-original-imafnyfwbxv8k8rc.jpeg?q=50",
+                    brand :"Fitbit",
+                    rating : "4",
+                    price: "1999"
+
+                },
+                {
+                    image:"https://rukminim1.flixcart.com/image/495/594/k7xnukw0/watch/x/p/h/4077-bk-fogg-original-imafq2d3xzf3tzpg.jpeg?q=50",
+                    brand :"fastractsmartwatch",
+                    rating : "5",
+                    price: "1500"
+
+                }
+            ]
+            var index=0;
+            var watches=document.getElementById("watchesid");
+            while(index<watchesarray.length)
+            {
+                var currentwatch=watchesarray[index];
+                watches.innerHTML=watches.innerHTML+"<li>"+"<img src='"+currentwatch.image+"'>"+"<br>"+"brand:"+currentwatch.brand+" "+"<br>"+"rating:"+currentwatch.rating+" "+"<br>"+"price:"+currentwatch.price+" "+"</li>"+"<br>"+"<br>"
+                index++;
+
+            }
+        </script>
+    </body>
+</html>
