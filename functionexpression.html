@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <title>
+            Function expression example
+        </title>
+    </head>
+    <body>
+        <form>
+            <input type="text" placeholder="enter mobile no" id="mobileno">
+            <button type="button" onclick="createOTP()">GET OTP</button><br><br>
+            <input type="text" placeholder="enter otp" id="otp"><br><br>
+            <input type="password" placeholder="enter password" id="password"><br><br>
+            <button type="button" onclick="validate()">SUBMIT</button>
+        </form>
+        <script>
+            
+            function createOTP(){
+                event.preventDefault();
+                var mobileno=document.getElementById("mobileno").value;
+
+                if(mobileno =="8074570895")
+                {
+                    alert("your otp is 0608");
+                }
+                else{
+                    alert("wrong mobileno");
+                }
+            }
+            function validate()
+            {
+                event.preventDefault();
+                var otp=document.getElementById("otp").value;
+                var password=document.getElementById("password").value;
+                if(otp=="0608" && password=="sai")
+                {
+                   redirect(true)
+                }
+                else{
+                   redirect(false)
+                }
+
+            }
+        
+            var redirect=function(result)
+            {
+                if(result==true)
+                {
+                    window.location.href="userhome.html";
+                    redirect=null;
+                }
+                else{
+                    alert("invalid credentials");
+                    redirect=null;
+                }
+
+            }
+
+        </script>
+    </body>
+</html>
+    
+
+     
