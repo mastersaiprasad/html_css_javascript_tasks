@@ -1,0 +1,45 @@
+<!--
+    problem statement
+    create a form that should contain name brand and price of an item as 
+    text fields,when the user clicks on the submit button gather all the values and 
+    store them in the function constructor object and display them on the console. 
+-->
+
+
+
+<html>
+    <head>
+        <title>functionconstructor_task</title>
+    </head>
+    <body>
+        <form>
+            <input type="text" id="name" placeholder="enter name"><br>
+            <input type="text" id="brand" placeholder="enter brand"><br>
+            <input type="text" id="price" placeholder="price"><br>
+            <button type="button" onclick="displaydetails()">SUBMIT</button>
+        </form>
+        <script>
+            function Displaydetails(name,brand,price)
+            {
+                this.laptopname=name;
+                this.laptopbrand=brand;
+                this.laptopprice=price;
+            }
+        
+            function displaydetails()
+            {
+                var ename=document.getElementById("name").value;
+                var ebrand=document.getElementById("brand").value;
+                var eprice=document.getElementById("price").value;
+                var laptopobject=new Displaydetails(ename,ebrand,eprice);
+                console.log(laptopobject);
+                console.log(laptopobject.laptopname);
+                console.log(laptopobject.laptopbrand);
+                console.log(laptopobject.laptopprice);
+            
+
+            }
+            
+        </script>
+    </body>
+</html>
